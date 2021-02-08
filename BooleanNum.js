@@ -28,4 +28,16 @@ class BooleanNum {
     if (this.a == 0 || b.a == 0) return new BooleanNum;
     else return new BooleanNum(1);
   }
+  div(b) {
+    if (b.a == 0) throw new Error('dividing by 0');
+    else return this;
+  }
+  log() {
+    if (this.a == 0) throw new Error('cannot do log(0)');
+    else return new BooleanNum;
+  }
+  pow(b) {
+    if (this.a == 1) return this;
+    else if (b.a == 0) throw new Error('cannot do 0^0');
+  }
 }
