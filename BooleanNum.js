@@ -39,5 +39,12 @@ class BooleanNum {
   pow(b) {
     if (this.a == 1) return this;
     else if (b.a == 0) throw new Error('cannot do 0^0');
+    return new BooleanNum;
+  }
+  toString() {
+    return this.a.toString();
+  }
+  toNumber() {
+    return this.a;
   }
 }
