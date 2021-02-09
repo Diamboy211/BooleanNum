@@ -8,7 +8,7 @@ class BooleanNum {
         this.a = (input < 0.5) ? 0 : 1;
       }
     } else if (input instanceof String) {
-      this = new BooleanNum(Number(String));
+      this = new BooleanNum(Number(input));
     } else throw new Error('unsupported type')
   }
   add(b) {
